@@ -1,0 +1,13 @@
+<div class="center-xs notes">
+  <div class="col-xs-6 creator">
+    <app-todo-creator (submitEvent) = "addTodo($event)"></app-todo-creator>
+  </div>
+  <div class="notes">
+    <div class="row">
+      <app-todo-card 
+      class="col-sm-4" 
+      [todo]="todo" *ngFor= "let todo of todos; let i = index;"
+      (selectedEvent) = "onTodoChecked($event, i)"></app-todo-card>
+    </div>
+  </div>
+</div>

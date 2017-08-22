@@ -1,0 +1,22 @@
+{
+    "data": [
+
+        {
+            "title": "clean up",
+            "color": "brown"
+        },
+
+        {
+            "title": "fix radio",
+            "color": "green"
+        },
+        {
+            "title": "read",
+            "color": "blue"
+        },
+        {
+            "title": "wash clothes",
+            "color": "white"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+<div class="note-creator shadow-2" 
+[ngStyle]="{'background-color': newTodo.color}">
+  <!--<pre>
+  {{newTodo | json}}
+  </pre>-->
+  <form class="row" 
+  (ngSubmit) = "createTodo(createTodoForm, createTodoForm.value)" 
+  #createTodoForm="ngForm">
+    <input type="text" id="title" name="title"  placeholder="What to do..." required class="col-xs-10 title" 
+    [(ngModel)]="newTodo.title"
+    (focus)="toggleForm(true)">
+    <!--<input type="text" name="color" placeholder="Color" class="col-xs-10 title" 
+    ngModel
+    *ngIf="fullForm">-->
+    <div class="actions col-xs-12 row between-xs"
+    *ngIf="fullForm">
+    <div class="col-xs-3">
+      <app-colour-picker 
+      [colors]="colors"
+      (colorPicked)="onColorSelect($event)">
+      </app-colour-picker>
+    </div>
+      <button type="submit" class="btn-light">
+        Done
+      </button>
+    </div>
+  </form>
+</div>
