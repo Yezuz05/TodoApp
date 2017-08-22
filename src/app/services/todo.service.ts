@@ -8,8 +8,8 @@ import { Todo } from '.././todo';
 
 @Injectable()
 export class TodoService {
-  //private todosUrl = 'api/todos'; //URL to web api
-  private todosUrl = 'http://localhost:4200/assets/todolist.json';
+  private todosUrl = 'api/todos'; //URL to web api
+  //private todosUrl = 'http://localhost:4200/assets/todolist.json';
 
   constructor(private http:Http) { }
 

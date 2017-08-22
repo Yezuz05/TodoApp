@@ -11,7 +11,7 @@ import { Todo } from '../.././todo';
     (mouseleave) = "toggle()"
     >
       <div class="icon" *ngIf = "showCheck" (click)="onChecked()">
-        <i class="fa fa-check"></i>
+        <i class="material-icons">check</i>
       </div>
       <div class="col-xs-12 title">
       {{todo.title}}
